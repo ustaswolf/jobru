@@ -1,5 +1,4 @@
-jobru
+Test
 =====
 
-Test
-see result at http://ustaswolf.github.io/jobru/
+Result at http://ustaswolf.github.io/jobru/
