@@ -1,0 +1,58 @@
+
+.eye-radio{
+  display: inline-block;
+}
+
+/*ie hack*/
+*|html .eye-radio{
+  display: none;
+}
+
+.eye-radio {
+  display: none;
+}
+.eye-radio + label {
+  cursor: pointer;
+}
+.eye-radio + label::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin: 0 8px 0 0;
+  background: url(/images/cb_radio.png) no-repeat -19px 0;
+  position: relative;
+  top: 3px;
+}
+.eye-radio:checked + label::before {
+  background-position: 0 0;
+}
+.eye-radio:disabled + label::before {
+  background-position: -19px 0;
+}
+.eye-radio:checked:disabled + label::before {
+  background-position: -19px 0;
+}
+
+.customSelect {
+  font-size:12px;
+  background: url(/images/background.png) repeat-x;
+  padding: 2px 5px 2px 15px;
+  border:1px solid #999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px;
+}
+
+.customSelect.changed {
+}
+
+.customSelectInner {
+  background:url(/images/up_down.png) no-repeat center right;
+  pointer-events: none;
+  padding-right: 5px;
+}
+
+.styled-select{
+    display: inline-block;
+}

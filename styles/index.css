@@ -1,0 +1,263 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+
+.header{
+	padding: 40px 0 37px;
+}
+
+.jobru-title{
+	margin: 2px 0 0 24px;
+	font-size: 52px;
+	font-weight: normal;
+}
+
+.jobru-image{
+	background: url(/images/main.png) no-repeat 0 0;
+	width: 129px;
+	height: 27px;
+	margin-top: 27px;
+}
+
+.personal-data-form{
+	padding: 15px 40px 40px;
+	background-color: #eee;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 345px;
+}
+
+.personal-data-form h2{
+	font-size: 31px;
+	font-weight: normal;
+	margin: 0 0 11px;
+}
+
+.avatar-image{
+	width: 80px;
+	height: 80px;
+	background-color: #e5e5e5;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+.avatar-wrapp{
+	position: absolute;
+	top: 0;
+}
+
+.rounded-input{
+	border: 1px solid #999;
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.left-rounded-input,
+.right-rounded-input{
+	border: 1px solid #999;
+	width: 50%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.left-rounded-input{
+	border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+}
+
+.right-rounded-input{
+	border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-left: none; 
+}
+
+.personal-data-form a{
+	text-decoration: none;
+	color: #0073E9;
+	margin: 10px 20px;
+	display: block;
+}
+
+.steps-to-job{
+	list-style-type: none;
+	font-size: 17px;
+	margin: 23px 0;
+	padding: 0;
+	line-height: 42px;
+}
+
+.userpic input {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	font-size: 50px;
+	cursor: pointer;
+	top: -10px;
+	right: -40px;
+	z-index: 2;
+}
+
+.input-btn{
+	padding: 0 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: url(/images/background.png) repeat-x;
+	border: 1px solid #999;
+	position: relative;
+	top: -23px;
+	margin-left: 10px;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.userpic{
+}
+
+.fio-selection{
+	margin-top: 20px;
+}
+
+.js-city,
+.js-metro{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+}
+
+.city-hint,
+.metro-hint{
+	position: absolute;
+	top: 11px;
+	left: 21px;
+	color: #999;
+	z-index: 2;
+}
+
+.autocomplete{
+	width: 100% !important;
+	z-index: 3;
+}
+
+.hidden{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+input[type="submit"]{
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	background-color: #FF3A00;
+	color: white;
+	font-size: 22px;
+	padding: 11px 35px;
+	border: none;
+	margin: 31px auto 0;
+	width: 350px;
+}
+
+input[type="submit"]:active{
+	background-color: red;
+}
+
+input[type="submit"]:focus{
+	outline: none;
+}
+
+.content{
+	margin-bottom: 100px;
+}
+
+.birthday-h3{
+	margin: 28px 0 10px;
+}
+
+.gender-h3{
+	margin: 25px 0 10px;
+}
+
+.nationality-selection label,
+.gender-selection label{
+	width: 140px;
+	display: inline-block;
+}
+
+.gender-selection{
+	margin: 0 0 27px 0;
+}
+
+.nationality-h3{
+	margin: 24px 0 10px;	
+}
+
+.nationality-selection{
+	margin: 0 0 30px 0;
+}
+
+.birthday-selection .styled-select{
+	margin-right: 10px;
+}
+
+.patronymic-selection{
+	margin-top: 10px;
+}
+
+.phones-selection{
+	margin-top: -10px;
+}
+
+.phones-selection input{
+	margin-top: 10px;
+}
+
+.themodal-overlay {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100000;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.popup {
+	margin: 25px auto;
+	float: left;
+	display: inline-block;
+	box-shadow: 0 0 5px #000;
+	background-color: #fff;
+}
+
+.popup__body {
+	margin: 10px 10px 5px;
+}
+
+.popup-button-upload .js-upload{
+	margin: 10px auto;
+	padding: 8px;
+	width: 100px;
+	text-align: center;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	background-color: #FF3A00;
+	color: white;
+	font-weight: bold;
+}

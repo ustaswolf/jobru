@@ -3,11 +3,196 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="/styles/controls.css" />
-        <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="styles/960_12_col.css" />
+        <link rel="stylesheet" type="text/css" href="styles/controls.css" />
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <link rel="stylesheet" type="text/css" href="js/jcrop/jquery.Jcrop.min.css" />
         <title>Test 4 job</title>
     </head>
     <body>
-        hello world
+        <div class="header container_12">
+            <div class="grid_2">
+                <div class="jobru-image"></div>
+            </div>
+            <div class="grid_7 alpha omega">
+                <h1 class="jobru-title">Составление резюме</h1>
+            </div>
+        </div>
+        <div class="content container_12">
+            <div class="grid_6 prefix_3 alpha">
+                <!--[if !IE]> --> <div class="notIE"> <!-- <![endif]-->
+                <form class="personal-data-form" action="#">
+                    <h2>1. Личные данные</h2>
+                    <div class="userpic">
+                        <div class="avatar-image">
+                            <div class="js-preview userpic__preview">
+                                <img class="js-avatar" src="/images/face.png" alt="">
+                            </div>
+                            <img class="avatar-wrapp" src="/images/circle_wrapp.png" alt="">
+                        </div>
+                        <div class="input-btn js-fileapi-wrapper">
+                            <div class="js-browse">
+                                <span class="btn-txt">Загрузить фото</span>
+                                <input type="file" name="filedata" accept="image/*">
+                            </div>
+                            <div style="display: none;" class="js-upload">
+                                <div class="progress progress-success">
+                                    <div class="js-progress bar"></div>
+                                </div>
+                                <span class="btn-txt">Загрузка</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popup" class="popup" style="display: none;">
+                        <div class="popup__body">
+                            <div class="js-img"></div>
+                        </div>
+                        <div class="popup-button-upload">
+                            <div class="js-upload">Загрузить</div>
+                        </div>
+                    </div>
+
+                    <div class="fio-selection">
+                        <input type="text" class="left-rounded-input js-surname" placeholder="Фамилия"/><!--
+                        do not enter here other text, it is inline
+                        !--><input type="text" class="right-rounded-input js-name" placeholder="Имя"/>
+                    </div>
+                    <a href="#" class="js-add-patronymic">+ Отчество</a>
+                    <div class="patronymic-selection js-patronymic" style="display:none">
+                        <input type="text" class="rounded-input" placeholder="Отчество"/>
+                    </div>
+                    <h3 class="birthday-h3">Дата рождения</h3>
+                    <div class="birthday-selection">
+                        <div class="styled-select">
+                            <label>
+                                <select name="day" id="day" size="1">
+                                    <option value=" ">День</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28" selected="selected">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="styled-select">
+                            <label>
+                                <select name="month" id="month" size="1">
+                                    <option value=" ">Месяц</option>
+                                    <option value="1" selected="selected">Января</option>
+                                    <option value="2">Февраля</option>
+                                    <option value="3">Марта</option>
+                                    <option value="4">Апреля</option>
+                                    <option value="5">Мая</option>
+                                    <option value="6">Июня</option>
+                                    <option value="7">Июля</option>
+                                    <option value="8">Августа</option>
+                                    <option value="9">Сентября</option>
+                                    <option value="10">Октября</option>
+                                    <option value="11">Ноября</option>
+                                    <option value="12">Декабря</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="styled-select">
+                            <label>
+                                <select name="year" id="year" size="1">
+                                    <option value=" ">Год</option>
+                                    <option value="1980" selected="selected">1980</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <h3 class="gender-h3">Пол</h3>
+                    <div class="gender-selection">
+                        <input class="eye-radio" type="radio" name="gender" id="genderMan" value="man" checked="checked">
+                        <label for="genderMan">Мужской</label>
+                        <input class="eye-radio" type="radio" name="gender" id="genderWoman" value="woman">
+                        <label for="genderWoman">Женский</label>
+                    </div>
+                    <div class="js-city">
+                        <input type="text" class="autocomplete left-rounded-input" autocomplete="off"/>
+                        <span class="city-hint">Город</span>
+                    </div><!--
+                    do not enter here other text, it is inline
+                    !--><div class="js-metro">
+                        <input type="text" class="autocomplete right-rounded-input" autocomplete="off"/>
+                        <span class="metro-hint">Станция метро</span>
+                    </div>
+
+                    <h3 class="nationality-h3">Гражданство</h3>
+                    <div class="nationality-selection">
+                        <input class="eye-radio" type="radio" name="nationality" id="russian" value="1" checked="checked">
+                        <label for="russian">Российское</label>
+                        <input class="eye-radio" type="radio" name="nationality" id="other" value="1">
+                        <label for="other">Иное</label>
+                    </div>
+                    <div class="phones-selection">
+                        <div class="js-phones">
+                            <input type="text" class="rounded-input" placeholder="Телефон"/>
+                        </div>
+                        <a href="#" class="js-add-phone">+ Еще один номер</a>
+                    </div>
+
+                    <input class="js-finish" type="submit" value="Сохранить и продолжить" />
+                </form>
+                <!--[if !IE]> --></div> <!-- <![endif]-->
+            </div>
+            <div class="grid_3 alpha">
+                <ul class="steps-to-job">
+                    <li>2. Опыт работы</li>
+                    <li>3. Образование и навыки</li>
+                    <li>Всего три шага от работы!</li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script>
+            window.FileAPI = {
+                  debug: false // debug mode
+                , staticPath: '/js/jquery.fileapi/FileAPI/' // path to *.swf
+            };
+        </script>
+        <script src="/js/jquery.fileapi/FileAPI/FileAPI.min.js"></script>
+        <script src="/js/jquery.fileapi/jquery.fileapi.js"></script>
+        <script src="/js/jcrop/jquery.Jcrop.min.js"></script>
+        <script src="/js/jquery.modal.js"></script>
+
+        <script src="/js/autocomplete.js"></script>
+        <script src="/js/jquery.customSelect.min.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>
