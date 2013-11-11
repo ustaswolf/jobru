@@ -21,7 +21,7 @@
   height: 16px;
   width: 16px;
   margin: 0 8px 0 0;
-  background: url(images/cb_radio.png) no-repeat -19px 0;
+  background: url(../images/cb_radio.png) no-repeat -19px 0;
   position: relative;
   top: 3px;
 }
@@ -40,7 +40,7 @@
 
 .customSelect {
   font-size:12px;
-  background: url(images/background.png) repeat-x;
+  background: url(../images/background.png) repeat-x;
   padding: 2px 5px 2px 15px;
   border:1px solid #999;
   -moz-border-radius: 5px;
@@ -49,7 +49,7 @@
 }
 
 .customSelectInner {
-  background:url(images/up_down.png) no-repeat center right;
+  background:url(../images/up_down.png) no-repeat center right;
   pointer-events: none;
   padding-right: 5px;
 }
