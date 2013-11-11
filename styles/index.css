@@ -36,7 +36,7 @@ body{
 }
 
 .jobru-image{
-	background: url(/images/main.png) no-repeat 0 0;
+	background: url(images/main.png) no-repeat 0 0;
 	width: 129px;
 	height: 27px;
 	margin-top: 27px;
@@ -148,7 +148,7 @@ body{
 
 .input-btn{
 	padding: 0 10px;
-	background: url(/images/background.png) repeat-x;
+	background: url(images/background.png) repeat-x;
 	border: 1px solid #999;
 	position: relative;
 	top: -23px;
