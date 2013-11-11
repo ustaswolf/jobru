@@ -1,11 +1,6 @@
 (function($){
     $.fn.autoComplete = function( options ){
-        var settings = $.extend({
-            // These are the defaults.
-            items: []
-        }, options );
-
-
+        var settings = $.extend({items: []}, options );
         return this.each(function() {
             var $this = $(this);
             var $input = $this.find(".autocomplete");
@@ -29,9 +24,7 @@
             });
 
             $input.keyup(function(I){
-                // определяем какие действия нужно делать при нажатии на клавиатуру
                 switch(I.keyCode) {
-                    // игнорируем нажатия на эти клавишы
                     case 13:  // enter
                     case 27:  // escape
                     case 38:  // стрелка вверх

@@ -1,4 +1,3 @@
-
 .eye-radio{
   display: inline-block;
 }
@@ -11,9 +10,11 @@
 .eye-radio {
   display: none;
 }
+
 .eye-radio + label {
   cursor: pointer;
 }
+
 .eye-radio + label::before {
   content: "";
   display: inline-block;
@@ -24,12 +25,15 @@
   position: relative;
   top: 3px;
 }
+
 .eye-radio:checked + label::before {
   background-position: 0 0;
 }
+
 .eye-radio:disabled + label::before {
   background-position: -19px 0;
 }
+
 .eye-radio:checked:disabled + label::before {
   background-position: -19px 0;
 }
@@ -44,9 +48,6 @@
   border-radius: 5px 5px;
 }
 
-.customSelect.changed {
-}
-
 .customSelectInner {
   background:url(/images/up_down.png) no-repeat center right;
   pointer-events: none;
@@ -54,5 +55,6 @@
 }
 
 .styled-select{
-    display: inline-block;
+  display: inline-block;
+  *display: inline;
 }

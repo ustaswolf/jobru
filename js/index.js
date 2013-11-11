@@ -1,4 +1,6 @@
 $(function(){
+	$('input, textarea').placeholder();
+	
     $('.userpic').fileapi({
         url: 'http://rubaxa.org/FileAPI/server/ctrl.php',
         autoUpload: true,
@@ -52,6 +54,15 @@ $(function(){
 	var year = document.getElementById('year');
 	var month = document.getElementById('month');
 	var day = document.getElementById('day');
+
+	function appendYears(){
+		var curYear = new Date().getFullYear();
+		for (var i = 1981; i <= curYear; i++){
+			year.options[year.options.length] = new Option(i,i);
+		}
+	}
+	appendYears();
+
     function daysInMonth(month,year) {
 		var dd = new Date(year, month, 0);
 		return dd.getDate();

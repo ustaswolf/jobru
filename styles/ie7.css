@@ -1,0 +1,28 @@
+.themodal-overlay {
+	background-color: #000;
+}
+
+.input-btn{
+	*display: inline;
+	left: 80px;
+	top: -40px;
+}
+
+.left-rounded-input,
+.right-rounded-input{
+	width: 130px !important;
+}
+
+.rounded-input{
+	width: 300px;
+}
+
+.js-city,
+.js-metro{
+	width: 172px;
+	*display: inline;
+}
+
+.eye-radio {
+  display: inline;
+}

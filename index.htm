@@ -9,6 +9,12 @@
         <link rel="stylesheet" type="text/css" href="styles/controls.css" />
         <link rel="stylesheet" type="text/css" href="styles/index.css" />
         <link rel="stylesheet" type="text/css" href="js/jcrop/jquery.Jcrop.min.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="styles/ie7.css">
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" type="text/css" href="styles/ie8.css">
+        <![endif]-->
         <title>Test 4 job</title>
     </head>
     <body>
@@ -16,7 +22,7 @@
             <div class="grid_2">
                 <div class="jobru-image"></div>
             </div>
-            <div class="grid_7 alpha omega">
+            <div class="grid_9 alpha omega">
                 <h1 class="jobru-title">Составление резюме</h1>
             </div>
         </div>
@@ -128,9 +134,6 @@
                                 <select name="year" id="year" size="1">
                                     <option value=" ">Год</option>
                                     <option value="1980" selected="selected">1980</option>
-                                    <option value="2000">2000</option>
-                                    <option value="2001">2001</option>
-                                    <option value="2002">2002</option>
                                 </select>
                             </label>
                         </div>
@@ -178,7 +181,9 @@
                 </ul>
             </div>
         </div>
-
+        <div class="footer">
+            <span>Vitaliy Volkov, 2013</span>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <script>
             window.FileAPI = {
@@ -193,6 +198,7 @@
 
         <script src="/js/autocomplete.js"></script>
         <script src="/js/jquery.customSelect.min.js"></script>
+        <script src="/js/jquery.placeholder.js"></script>
         <script src="/js/index.js"></script>
     </body>
 </html>
